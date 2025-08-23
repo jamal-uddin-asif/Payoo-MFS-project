@@ -1,10 +1,270 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
-</head>
-<body>
-    <h1>Home Page</h1>
-</body>
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100 font-[Outfit]">
+    <div class="bg-white max-w-lg mx-auto rounded-b-2xl">
+      <nav class="flex justify-between items-center border-b-1">
+        <div class="flex">
+          <div>
+            <img src="./assets/Group.png" alt="" />
+          </div>
+
+          <div class="content-center">
+            <div>$<span id="main-balance" class="font-bold">45000</span></div>
+            <p class="text-[#08080880]">Available Balance</p>
+          </div>
+        </div>
+        <button class="btn btn-outline text-[#08080880]">Default</button>
+      </nav>
+
+      <!-- welcome to payoo section  -->
+
+      <section id="payoo-section" class="p-8">
+        <h1 class="font-bold text-2xl mb-2">🔥 Welcome to Payooo!</h1>
+        <p class="text-[#08080880]">
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
+
+        <div class="parent-div grid gap-4 grid-cols-3 mt-3">
+          <div
+            id="add-money-div"
+            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          >
+            <img src="./assets/wallet1.png" alt="" />
+            <p class="mt-2">Add Money</p>
+          </div>
+          <div
+            id="cash-out-div"
+            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          >
+            <img src="./assets/send1.png" alt="" />
+            <p class="mt-2">Cashout</p>
+          </div>
+          <div
+            id="transfer-money-div"
+            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          >
+            <img src="./assets/money1.png" alt="" />
+            <p class="mt-2">Transfer Money</p>
+          </div>
+          <div
+            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          >
+            <img src="./assets/bonus1.png" alt="" />
+            <p class="mt-2">Get Bonus</p>
+          </div>
+          <div
+            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          >
+            <img src="./assets/purse1.png" alt="" />
+            <p class="mt-2">Pay Bill</p>
+          </div>
+          <div
+            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          >
+            <img src="./assets/transaction1.png" alt="" />
+            <p class="mt-2">Transactions</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Latest Payment section  -->
+    <section id="latest-payment-section" class="p-5 max-w-lg mx-auto">
+      <div class="flex justify-between">
+        <h1 class="font-bold mb-3">latest Payment</h1>
+        <p>View All</p>
+      </div>
+
+      <div>
+        <div class="flex justify-between items-center bg-white p-3 mb-3">
+          <div class="flex items-center">
+            <div class="mx-4  pr-2 rounded-3xl bg-[#F4F5F7]">
+              <img src="./assets/wallet1.png" alt="" />
+            </div>
+            <div>
+              <h3>Electricity Bill</h3>
+              <small>today 01:44 AM</small>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="flex justify-between items-center bg-white p-3 mb-3">
+          <div class="flex items-center">
+            <div class="mx-4  pr-2 rounded-3xl bg-[#F4F5F7]">
+              <img src="./assets/wallet1.png" alt="" />
+            </div>
+            <div>
+              <h3>Electricity Bill</h3>
+              <small>today 01:44 AM</small>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="flex justify-between items-center bg-white p-3 mb-3">
+          <div class="flex items-center">
+            <div class="mx-4  pr-2 rounded-3xl bg-[#F4F5F7]">
+              <img src="./assets/wallet1.png" alt="" />
+            </div>
+            <div>
+              <h3>Electricity Bill</h3>
+              <small>today 01:44 AM</small>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="flex justify-between items-center bg-white p-3 mb-6 ">
+          <div class="flex items-center">
+            <div class="mx-4  pr-2 rounded-3xl bg-[#F4F5F7]">
+              <img src="./assets/wallet1.png" alt="" />
+            </div>
+            <div>
+              <h3>Electricity Bill</h3>
+              <small>today 01:44 AM</small>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add Money section  -->
+
+    <section id="add-money-section" class="p-5 max-w-lg mx-auto hidden">
+      <h1 class="font-bold mb-3">Add Money</h1>
+      <form class="bg-white p-6 rounded-3xl">
+        <div>
+          <label for="select-bank">Select A Bank</label><br />
+          <select
+            id="select-bank"
+            class="select select-ghost bg-[#F4F5F7] w-full rounded-3xl my-3"
+          >
+            <option>Select a bank</option>
+            <option>Islami bank</option>
+            <option>AB bank</option>
+            <option>Dutch bangla bank</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="font-semibold">Bank Account Number</label><br />
+          <input
+            id="account-number"
+            type="text"
+            placeholder="Enter 11 digit account number"
+            class="input input-neutral bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3"
+          />
+        </div>
+
+        <div>
+          <label class="font-semibold ]">Amount to Add</label><br />
+          <input
+            id="add-money-input"
+            type="text"
+            placeholder="Add Amount"
+            class="input input-neutral bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3"
+          />
+        </div>
+
+        <div>
+          <label class="font-semibold">Pin Number</label><br />
+          <input
+            id="pin-input"
+            type="text"
+            placeholder="Enter 4 digit pin number"
+            class="input input-neutral bg-[#F4F5F7] mt-3 rounded-3xl w-full"
+          />
+        </div>
+        <button
+          id="btn-add-money"
+          type="button"
+          class="btn w-full mt-3 rounded-3xl bg-[#0874F2] text-white"
+        >
+          Add Money
+        </button>
+      </form>
+    </section>
+
+    <!-- Cash out section  -->
+
+    <section id="cash-out-section" class="p-5 max-w-lg mx-auto hidden">
+      <h1 class="font-bold mb-3">Cash Out</h1>
+      <form class="bg-white p-6 rounded-3xl">
+        <div>
+          <label for="agent-number" class="font-semibold">Agent Number</label
+          ><br />
+          <input
+            id="agent-number"
+            type="text"
+            placeholder="Enter 11 digit number"
+            class="input input-neutral bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3 border-none"
+          />
+        </div>
+
+        <div>
+          <label class="font-semibold ]">Amount</label><br />
+          <input
+            id="withdraw-money-input"
+            type="text"
+            placeholder="Enter Amount to withdraw"
+            class="input input-neutral bg-[#F4F5F7] mt-3 rounded-3xl w-full mb-3 border-none"
+          />
+        </div>
+
+        <div>
+          <label class="font-semibold">Pin Number</label><br />
+          <input
+            id="pin-withdraw"
+            type="text"
+            placeholder="Enter 4 digit pin number"
+            class="input input-neutral bg-[#F4F5F7] mt-3 rounded-3xl w-full border-none"
+          />
+        </div>
+        <button
+          id="btn-withdraw-money"
+          type="button"
+          class="btn w-full mt-3 rounded-3xl bg-[#0874F2] text-white"
+        >
+          Withdraw Money
+        </button>
+      </form>
+    </section>
+
+    <!-- Transfer Money section  -->
+    <section id="transfer-money-section" class="p-5 max-w-lg mx-auto hidden">
+      <h1 class="font-bold mb-3">transfer Money</h1>
+    </section>
+
+    <!-- js  -->
+    <script src="./home.js"></script>
+  </body>
 </html>
