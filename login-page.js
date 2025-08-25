@@ -7,7 +7,6 @@ document.getElementById('btn-login').addEventListener('click',function(){
 
     if(userNumber === inputNumber && userPin === inputPin){
         window.location.href = './home.html'
-        console.log('all detile are correct')
     }
     else{
         alert('information incorrect')

@@ -57,39 +57,42 @@
         <div class="parent-div grid gap-4 grid-cols-3 mt-3">
           <div
             id="add-money-div"
-            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+            class="forms-btn border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
           >
             <img src="./assets/wallet1.png" alt="" />
             <p class="mt-2">Add Money</p>
           </div>
           <div
             id="cash-out-div"
-            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+            class="forms-btn border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
           >
             <img src="./assets/send1.png" alt="" />
             <p class="mt-2">Cashout</p>
           </div>
           <div
             id="transfer-money-div"
-            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+            class="forms-btn border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
           >
             <img src="./assets/money1.png" alt="" />
             <p class="mt-2">Transfer Money</p>
           </div>
           <div
-            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          id="get-bonus-div"
+            class="forms-btn border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
           >
             <img src="./assets/bonus1.png" alt="" />
             <p class="mt-2">Get Bonus</p>
           </div>
           <div
-            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          id="pay-bill-div"
+            class="forms-btn border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
           >
             <img src="./assets/purse1.png" alt="" />
             <p class="mt-2">Pay Bill</p>
           </div>
           <div
-            class="border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
+          id="transaction-div"
+            class="forms-btn border-2 border-[#1A1A1A1A] h-24 flex justify-center items-center flex-col rounded-2xl"
           >
             <img src="./assets/transaction1.png" alt="" />
             <p class="mt-2">Transactions</p>
@@ -99,7 +102,7 @@
     </div>
 
     <!-- Latest Payment section  -->
-    <section id="latest-payment-section" class="p-5 max-w-lg mx-auto">
+    <section id="latest-payment-section" class="forms p-5 max-w-lg mx-auto">
       <div class="flex justify-between">
         <h1 class="font-bold mb-3">latest Payment</h1>
         <p>View All</p>
@@ -159,7 +162,7 @@
 
     <!-- Add Money section  -->
 
-    <section id="add-money-section" class="p-5 max-w-lg mx-auto hidden">
+    <section id="add-money-section" class="forms p-5 max-w-lg mx-auto hidden">
       <h1 class="font-bold mb-3">Add Money</h1>
       <form class="bg-white p-6 rounded-3xl">
         <div>
@@ -216,7 +219,7 @@
 
     <!-- Cash out section  -->
 
-    <section id="cash-out-section" class="p-5 max-w-lg mx-auto hidden">
+    <section id="cash-out-section" class="forms p-5 max-w-lg mx-auto hidden">
       <h1 class="font-bold mb-3">Cash Out</h1>
       <form class="bg-white p-6 rounded-3xl">
         <div>
@@ -260,9 +263,30 @@
     </section>
 
     <!-- Transfer Money section  -->
-    <section id="transfer-money-section" class="p-5 max-w-lg mx-auto hidden">
+    <section id="transfer-money-section" class="forms p-5 max-w-lg mx-auto hidden">
       <h1 class="font-bold mb-3">transfer Money</h1>
     </section>
+
+    <!-- Get bonus section  -->
+       <section id="get-bonus-section" class="forms p-5 max-w-lg mx-auto hidden">
+      <h1 class="font-bold mb-3">Get Bonus</h1>
+    </section>
+
+    <!-- Pay Bill section  -->
+    <section id="pay-bill-section" class="forms p-5 max-w-lg mx-auto hidden">
+      <h1 class="font-bold mb-3">Pay Bill</h1>
+    </section>
+
+
+    <!-- Transactions section  -->
+     
+    <section id="transaction-section" class="forms p-5 max-w-lg mx-auto hidden">
+      <h1 class="font-bold mb-3">Transactions</h1>
+      <div id="transaction-parent">
+        
+      </div>
+    </section>
+
 
     <!-- js  -->
     <script src="./home.js"></script>
